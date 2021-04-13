@@ -1,6 +1,6 @@
 import argparse
-import swager_yaml_2_html
-from swager_yaml_2_html import __version__
+import swagger_yaml_2_html
+from swagger_yaml_2_html import __version__
 
 import yaml, json, sys
 
@@ -59,13 +59,13 @@ window.onload = function() {
 </html>
 """
 
-def parser_swager_yaml():
+def parser_swagger_yaml():
 
     spec = yaml.load(sys.stdin, Loader=yaml.FullLoader)
     sys.stdout.write(TEMPLATE % json.dumps(spec))
 
 def main():
-    parser_swager_yaml()
+    parser_swagger_yaml()
 
 
 if __name__ == '__main__':

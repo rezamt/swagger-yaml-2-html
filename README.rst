@@ -1,15 +1,18 @@
-.. These are the Travis-CI and Coveralls badges for your repository. Replace
-   your *github_repository* and uncomment these lines by removing the leading
-   two dots.
+![Docker Automated build](https://img.shields.io/docker/automated/yousan/swagger-yaml-to-html)
 
-.. .. image:: https://travis-ci.org/*github_repository*.svg?branch=master
-    :target: https://travis-ci.org/*github_repository*
+# Swagger YAML into HTML
 
-.. .. image:: https://coveralls.io/repos/github/*github_repository*/badge.svg?branch=master
-    :target: https://coveralls.io/github/*github_repository*?branch=master
+![ScreenShot](https://github.com/yousan/swagger-yaml-to-html/blob/master/screenshot-1.png?raw=true "ScreenShot")
+
+# How To Use
+
+```bash
+python setup dist
+
+pip install dist/swagger-yaml-2-html-0.1.0.tar.gz -y
 
 
-You are seeing this description because the package owner is lazy and did not
-provide a detailed description for its project ;-)
+swagger-yaml-2-html < petstore.yaml > petstore.html
 
-Since you are here, please help with the swagger-yaml-2-html's documentation!
+
+```
